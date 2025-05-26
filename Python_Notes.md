@@ -25,7 +25,7 @@ pip install --upgrade pip setuptools wheel
 ```
 
 
-## Pytorch
+# Pytorch
 
 tags # torch
 
