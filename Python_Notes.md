@@ -24,6 +24,17 @@ conda activate my_env
 pip install --upgrade pip setuptools wheel
 ```
 
+# Pip
+
+limit range of package version
+
+tag # pip limit version # pip version smaller than # package version smaller # package smaller version
+
+eg
+```bash
+pip install "numpy<2"
+```
+
 
 # Pytorch
 
