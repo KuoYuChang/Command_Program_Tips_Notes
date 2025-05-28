@@ -62,7 +62,7 @@ in cell, run command `%pycat *filename*`, like:
 
 Will appear a pop up, shows codes
 
-Paste contents into new empty cell like:
+Copy and paste contents into new empty cell like:
 
 ```python
 # this is a cell in colab
