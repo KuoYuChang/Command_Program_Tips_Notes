@@ -114,3 +114,7 @@ def show():
 Finally, run the cell, file will be modified
 
 [Reference](https://stackoverflow.com/a/53296722)
+
+* ### locations of colab files
+
+Usually at `/content/`, able to access from `root` folder
