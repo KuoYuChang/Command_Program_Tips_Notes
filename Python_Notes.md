@@ -47,3 +47,70 @@ tags # torch device # torch device if cuda # torch get device # torch device var
 ```python
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 ```
+
+
+# Colab
+
+Edit and overwrite files in colab
+
+tag # colab edit files # colab edit py # colab edit and save # colab modify files
+
+in cell, run command `%pycat *filename*`, like:
+```python
+%pycat utils.py
+```
+
+Will appear a pop up, shows codes
+
+Paste contents into new empty cell like:
+
+```python
+# this is a cell in colab
+# contents of utils.py
+import numpy as np
+
+def show():
+    print()
+
+# something
+# something
+#
+```
+
+Edit
+
+```python
+# this is a cell in colab
+# contents of utils.py
+import numpy as np
+
+def show():
+    # some modified
+    print("show modified")
+    print()
+
+# something
+# something
+#
+```
+
+After edit finished, add command `%%writefile *filename*` on top of the cell
+
+```python
+%%writefile utils.py
+# this is a cell in colab
+# contents of utils.py
+import numpy as np
+
+def show():
+    # some modified
+    print("show modified")
+    print()
+
+# something
+# something
+#
+```
+Finally, run the cell, file will be modified
+
+[Reference](https://stackoverflow.com/a/53296722)
