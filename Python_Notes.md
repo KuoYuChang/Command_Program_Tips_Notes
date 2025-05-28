@@ -3,7 +3,7 @@
 ## Conda
 
 
-### Create Env
+* ### Create Env
 tags: \# conda create env \# create env \# conda create virtualenv
 
 Example to create an conda env named `my_env` :
@@ -26,7 +26,7 @@ pip install --upgrade pip setuptools wheel
 
 # Pip
 
-limit range of package version
+* ### limit range of package version
 
 tag # pip limit version # pip version smaller than # package version smaller # package smaller version
 
@@ -41,7 +41,7 @@ pip install "numpy<2"
 tags # torch
 
 
-#### set device
+* ### set device
 tags # torch device # torch device if cuda # torch get device # torch device variable
 
 ```python
@@ -51,7 +51,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Colab
 
-Edit and overwrite files in colab
+* ### Edit and overwrite files in colab
 
 tag # colab edit files # colab edit py # colab edit and save # colab modify files
 
