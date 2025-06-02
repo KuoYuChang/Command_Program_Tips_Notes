@@ -36,6 +36,21 @@ pip install "numpy<2"
 ```
 
 
+* search packages, filter packages
+
+tag # pip filer # pip search packages # pip filter out packages # pip find # pip find certain # pip find by string # pip search packages with string
+
+```bash
+# linux
+pip list | grep tensorflow
+```
+
+```bash
+# windows
+pip list | findstr tensorflow
+```
+
+
 # Pytorch
 
 tags # torch
