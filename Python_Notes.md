@@ -68,6 +68,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 * run py file with multiple input arguments, by adding `%%bash` on top of cell[^jakevdp]:
 
+tag # colab multiple arg # multiple argv # colab wrap command # colab cell multiple parameters
+
 ```bash
 %%bash
 python example.py arg0=0 \
