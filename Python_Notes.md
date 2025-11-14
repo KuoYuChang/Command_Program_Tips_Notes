@@ -66,6 +66,18 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Colab
 
+* run py file with multiple input arguments, by adding `%%bash` on top of cell[^jakevdp]:
+
+```bash
+%%bash
+python example.py arg0=0 \
+                    arg1=1 \
+                    arg2=2 \
+```
+$\quad$ Note that adding `#` is not allowed in bash cell, no space after `\`
+
+
+
 * ### Edit and overwrite files in colab
 
 tag # colab edit files # colab edit py # colab edit and save # colab modify files
@@ -133,3 +145,10 @@ Finally, run the cell, file will be modified
 * ### location of colab files
 
 Usually at `/content/`, able to access from `root` folder
+
+
+
+## References
+
+[^jakevdp]: from jakevdp [stackoverflow](https://stackoverflow.com/a/60477370)
+
