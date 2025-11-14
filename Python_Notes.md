@@ -71,7 +71,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 tag # colab edit files # colab edit py # colab edit and save # colab modify files
 
 in cell, run command `%pycat *filename*`, like:
-```python
+```bash
 %pycat utils.py
 ```
 
