@@ -148,7 +148,64 @@ Finally, run the cell, file will be modified
 
 Usually at `/content/`, able to access from `root` folder
 
+# Hydra
 
+tag #hydra #hyper para #hyper parameter
+
+* set sub-config file as parameters for py file, in folder `conf/`
+
+```yaml
+defaults:
+  - db: mysql
+
+debug: false
+```
+
+$\quad$ Means that there's a yaml file in folder `conf/db/`
+
+$\quad$ Prepare two yaml files in `conf/db`:
+
+```yaml
+# mysql.yaml
+name: mysql
+```
+
+```yaml
+#sqlite.yaml
+name: sqlite
+```
+
+$\quad$ Prepare test py file on root folder:
+```python
+import hydra
+from omegaconf import DictConfig, OmegaConf
+
+@hydra.main(version_base=None, config_path="conf", config_name="config")
+def my_app(cfg : DictConfig) -> None:
+    print(OmegaConf.to_yaml(cfg))
+
+if __name__ == "__main__":
+    my_app()
+```
+
+$\quad$ looks like this
+```
+├── my_app.py
+│   ├── config.yaml
+│   ├── db
+│   │   ├── mysql.yaml
+│   │   └── sqlite.yaml 
+```
+
+* Run commend line
+
+```bash
+python my_app.py # call default db in config/config.yaml
+```
+
+```bash
+python my_app.py db=sqlite # change db to sqlite, in config/config.yaml
+```
 
 ## References
 
