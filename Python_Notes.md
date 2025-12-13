@@ -152,6 +152,8 @@ Usually at `/content/`, able to access from `root` folder
 
 tag #hydra #hyper para #hyper parameter
 
+Here's an example[^hydra_official]:
+
 * set sub-config file as parameters for py file, in folder `conf/`
 
 ```yaml
@@ -212,3 +214,4 @@ python my_app.py db=sqlite # change db to sqlite, in config/config.yaml
 
 [^jakevdp]: from jakevdp [stackoverflow](https://stackoverflow.com/a/60477370)
 
+[^hydra_official]: hydra official [example1](https://hydra.cc/docs/intro/) and [example2](https://hydra.cc/docs/advanced/defaults_list/) 
