@@ -135,6 +135,8 @@ Finally, run the cell, file will be modified
 
 * ### Update code in colab after file changed[^colab_update_code]
 
+tag # colab autoreload # colab update code # autoreload # colab update files # colab file changed 
+
 ```python
 import sys
 import importlib
