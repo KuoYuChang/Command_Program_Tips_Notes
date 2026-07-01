@@ -224,6 +224,6 @@ python my_app.py db=sqlite # change db to sqlite, in config/config.yaml
 
 [^jakevdp]: from jakevdp [stackoverflow](https://stackoverflow.com/a/60477370)
 
-[^hydra_official]: hydra official [example1](https://hydra.cc/docs/intro/) and [example2](https://hydra.cc/docs/advanced/defaults_list/) 
-
 [^colab_update_code]: from Antony Hatchkins [stackoverflow](https://stackoverflow.com/a/46814062)
+
+[^hydra_official]: hydra official [example1](https://hydra.cc/docs/intro/) and [example2](https://hydra.cc/docs/advanced/defaults_list/) 
