@@ -133,6 +133,25 @@ Finally, run the cell, file will be modified
 
 [Reference](https://stackoverflow.com/a/53296722)
 
+* ### Update code in colab after file changed[^colab_update_code]
+
+```python
+import sys
+import importlib
+```
+
+```python
+# withdraw file extension .py
+importlib.reload(sys.modules["utils"])
+importlib.reload(sys.modules["tools.data_loader"])
+```
+
+Then import functions again
+```python
+from utils import show
+from tools.data_loader import test_loader
+```
+
 * ### location of colab files
 
 Usually at `/content/`, able to access from `root` folder
@@ -204,3 +223,5 @@ python my_app.py db=sqlite # change db to sqlite, in config/config.yaml
 [^jakevdp]: from jakevdp [stackoverflow](https://stackoverflow.com/a/60477370)
 
 [^hydra_official]: hydra official [example1](https://hydra.cc/docs/intro/) and [example2](https://hydra.cc/docs/advanced/defaults_list/) 
+
+[^colab_update_code]: from Antony Hatchkins [stackoverflow](https://stackoverflow.com/a/46814062)
